@@ -31,11 +31,13 @@ is created in neo4j as the network set out below:
 
 ## API
 
-json@neo4j responds to the following RESTful http verbs:
+### Create a json Document
 
-| VERB | Behaviour                                    | Example Request           | Example Response         |
-|------|:---------------------------------------------|---------------------------|--------------------------|
-| POST |On POSTing a JSON string, the endpoint returns an _id which can be used in subsequent places where the API requires {:id}<br>`http://your_server`|
+|  |     |
+|------|:--------------------------------------------------------------------------------------------------|
+| url | http://yourserver:yourport/jdoc |
+| http | POST |
+| Action |On POSTing a JSON string, the endpoint returns an _id which can be used in subsequent places where the API requires {:id}<br>`http://your_server`|
 
 ## Progress
 
