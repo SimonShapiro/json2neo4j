@@ -33,12 +33,13 @@ is created in neo4j as the network set out below:
 
 ### Create a json Document
 
+|  | Description
 |------|:--------------------------------------------------------------------------------------------------
 | url | http://yourserver:yourport/jdoc
 | http | POST
 | Action |On POSTing a JSON string, the endpoint returns an _id which can be used in subsequent places where the API requires
 | Parameters | none
-| Example Request | 
+| Example Request |
 
 ## Progress
 
