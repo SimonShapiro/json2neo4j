@@ -36,9 +36,9 @@ is created in neo4j as the network set out below:
 |------|:--------------------------------------------------------------------------------------------------|
 | url | http://yourserver:yourport/jdoc |
 | http | POST |
-| Action |On POSTing a JSON string, the endpoint returns an _id which can be used in subsequent places where the API requires {:id}
-| Parameters | none
-| Example Request |
+| Action |On POSTing a JSON string, the endpoint returns an _id which can be used in subsequent places where the API requires {:id} |
+| Parameters | none |
+| Example Request | |
 ## Progress
 
 2014-07-03:
