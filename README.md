@@ -5,11 +5,14 @@ A node.js based route to neo4j providing a REST interface that persists json doc
 
 ## Background
 
-While neo4j has support for json, it is restricted to simple key:value pairs of string, number and arrays of string or number.  The intent in this project is to use nodejs as a front-end to neo4j to present a RESTful interface to neo4j.  By POSTing a json string to the node.js route, the json structure would be fully represented in neo4j as a group of nodes and relationships.  GETting this group would re-create the original json.
+While neo4j has support for json, it is restricted to simple key:value pairs of string, number and arrays of string or number.
+nodejs acts as a front-end to neo4j to present a RESTful interface to neo4j.
+By POSTing a json string to the node.js route, the json structure is represented in neo4j as a group of nodes and relationships.
+GETting this group re-creates the original json.
 
 ## Example
 
-With the following json file,
+The following json file,
 
 ```
 test = {
@@ -22,7 +25,13 @@ test = {
 }
 ```
 
-we want the following RESTful http verbs to act as follows:
+is created in neo4j as the network set out below:
+
+![network diagram](Documentation/json2neopic1.png)
+
+## API
+
+json@neo4j responds to the following RESTful http verbs:
 
 | VERB | Behaviour                                    | Example Request           | Example Response         |
 |------|:---------------------------------------------|---------------------------|--------------------------|
